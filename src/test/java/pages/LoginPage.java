@@ -11,7 +11,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import testcases.BaseClass;
 
-public class LoginPage {
+public class LoginPage  {
 	
 	WebDriver driver=BaseClass.driver;
 	ExtentTest test= BaseClass.test;

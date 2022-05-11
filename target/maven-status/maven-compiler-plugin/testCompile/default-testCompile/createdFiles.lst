@@ -2,4 +2,5 @@ testcases\BaseClass.class
 testcases\LoginTest.class
 pages\LoginPage.class
 testcases\HomePageTest.class
+grid\GridExample.class
 pages\HomePage.class

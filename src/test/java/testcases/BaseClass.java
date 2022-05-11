@@ -67,8 +67,8 @@ public class BaseClass {
 	
 	@AfterMethod
 	public void tearDown() {
-		report.endTest(test);
 		driver.close();
+		report.endTest(test);
 	}
 
 }

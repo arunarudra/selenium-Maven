@@ -11,12 +11,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.LoginPage;
+import utilities.TestNGListenerClass;
 
+@Listeners(TestNGListenerClass.class)
 public class LoginTest extends BaseClass {
 	
 	
@@ -69,7 +72,7 @@ public class LoginTest extends BaseClass {
 			//String msg = errormsg.getText();
 			//String expmsg = "The email or password you have entered is invalid.";
 			
-			Assert.assertEquals(msg, "Learning on Simplilearn");
+			Assert.assertEquals(msg, "Learning on Simplilearn.");
 			hp.clickProfile();
 			hp.clickLogOut();
 			
